@@ -3,61 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ketogenic Lifestyle UK - Wellness Guide 2025</title>
-    <meta name="description" content="Explore the benefits of the Keto diet. Energy, focus, and metabolic support. Check availability of top-rated supplements in the UK.">
+    <title>The Keto Shift: UK's Metabolic Wellness Report 2025</title>
+    <meta name="description" content="An in-depth look at Proper Keto Capsules and the science of BHB ketosis. Expert review on ingredients, benefits, and UK availability.">
+    <!-- 引入 Google Fonts 提升质感 -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        :root { --green: #388e3c; --text: #333; --bg: #f9f9f9; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; color: var(--text); line-height: 1.6; background: var(--bg); }
-        .nav { background: #fff; padding: 15px 0; border-bottom: 1px solid #ddd; text-align: center; font-weight: bold; font-size: 1.2rem; color: var(--green); }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-        .hero { background: #fff; padding: 40px; border-radius: 8px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        h1 { font-size: 2.2rem; margin-bottom: 10px; }
-        .btn { display: inline-block; background: var(--green); color: white; padding: 18px 40px; border-radius: 50px; font-weight: bold; text-decoration: none; font-size: 1.1rem; margin-top: 20px; transition: 0.3s; box-shadow: 0 5px 15px rgba(56,142,60,0.3); }
-        .btn:hover { transform: translateY(-2px); background: #2e7d32; }
-        .content { margin-top: 40px; background: #fff; padding: 30px; border-radius: 8px; }
-        .alert { background: #fff3cd; color: #856404; padding: 10px; border-radius: 4px; border: 1px solid #ffeeba; margin-bottom: 20px; text-align: center; font-weight: bold; font-size: 0.9rem; }
-        footer { margin-top: 50px; text-align: center; font-size: 0.8rem; color: #777; }
-        li { margin-bottom: 10px; }
+        :root {
+            --primary: #154734; /* 权威深绿 */
+            --accent: #d3a03e; /* 金色点缀 */
+            --text: #2d2d2d;
+            --light-bg: #f8f9fa;
+            --border: #e2e2e2;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Roboto', sans-serif; color: var(--text); line-height: 1.7; background: #fff; }
+        a { text-decoration: none; color: inherit; }
+        
+        /* 顶部导航 - 极简杂志风 */
+        .nav { border-bottom: 1px solid var(--border); padding: 20px 0; background: #fff; position: sticky; top: 0; z-index: 100; }
+        .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--primary); letter-spacing: -0.5px; }
+        .tagline { font-size: 12px; text-transform: uppercase; color: #888; letter-spacing: 1px; display: none; }
+        @media(min-width: 768px) { .tagline { display: block; } }
+
+        /* 布局容器 */
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr; gap: 40px; }
+        @media(min-width: 992px) { .container { grid-template-columns: 2fr 1fr; } }
+
+        /* 左侧：文章主体 */
+        .article-header h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; line-height: 1.2; margin-bottom: 20px; color: #111; }
+        .meta { display: flex; align-items: center; gap: 15px; font-size: 0.9rem; color: #666; margin-bottom: 30px; border-bottom: 1px solid var(--border); padding-bottom: 20px; }
+        .author-img { width: 40px; height: 40px; border-radius: 50%; background: #ddd; object-fit: cover; }
+        .verified-badge { color: var(--primary); display: flex; align-items: center; gap: 4px; font-weight: 500; }
+        
+        .content p { margin-bottom: 20px; font-size: 1.1rem; color: #444; }
+        .content h2 { font-family: 'Playfair Display', serif; margin-top: 40px; margin-bottom: 15px; font-size: 1.8rem; }
+        .content ul { margin-bottom: 25px; padding-left: 20px; }
+        .content li { margin-bottom: 10px; }
+        
+        /* 高亮引用块 */
+        .quote-box { background: var(--light-bg); border-left: 4px solid var(--primary); padding: 20px; font-style: italic; margin: 30px 0; font-family: 'Playfair Display', serif; font-size: 1.2rem; }
+
+        /* 右侧：吸附侧边栏 (Widget) */
+        .sidebar { position: relative; }
+        .widget { background: #fff; border: 1px solid var(--border); padding: 30px; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); position: sticky; top: 100px; }
+        .widget-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 15px; text-align: center; }
+        .product-preview { background: #f4f4f4; height: 200px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #888; font-weight: bold; border-radius: 4px; }
+        /* 用 CSS 画一个药瓶示意图，避免侵权图片 */
+        .bottle-icon { font-size: 60px; } 
+
+        .stock-meter { background: #eee; height: 8px; border-radius: 4px; margin: 15px 0 5px; overflow: hidden; }
+        .stock-fill { height: 100%; width: 20%; background: #d9534f; border-radius: 4px; } /* 红色代表低库存 */
+        .stock-text { font-size: 0.85rem; color: #d9534f; font-weight: 700; text-align: center; margin-bottom: 20px; }
+
+        .btn-cta { display: block; width: 100%; background: var(--primary); color: #fff; text-align: center; padding: 18px; font-weight: 700; font-size: 1.1rem; border-radius: 4px; transition: 0.3s; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 10px 20px rgba(21, 71, 52, 0.2); }
+        .btn-cta:hover { background: #0d3325; transform: translateY(-2px); }
+        
+        .guarantee { font-size: 0.8rem; text-align: center; color: #888; margin-top: 15px; display: flex; justify-content: center; gap: 10px; }
+
+        /* 底部 */
+        footer { background: #111; color: #999; padding: 60px 0; margin-top: 80px; font-size: 0.85rem; }
+        .footer-content { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; gap: 20px; text-align: center; }
+        .disclaimer { border-top: 1px solid #333; padding-top: 20px; margin-top: 20px; line-height: 1.5; font-size: 0.75rem; color: #666; }
+
+        /* 移动端底部悬浮条 */
+        .mobile-sticky { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; padding: 15px 20px; box-shadow: 0 -5px 20px rgba(0,0,0,0.1); display: none; z-index: 999; }
+        @media(max-width: 991px) { 
+            .sidebar { display: none; } /* 移动端隐藏侧边栏 */
+            .mobile-sticky { display: block; }
+        }
     </style>
 </head>
 <body>
-    <div class="nav">🌿 UK Wellness Journal</div>
-    
-    <div class="container">
-        <div class="hero">
-            <div class="alert">🇬🇧 High Demand in United Kingdom: Limited Stock Alert</div>
-            <h1>Unlock Your Metabolic Potential</h1>
-            <p>The comprehensive guide to BHB Ketosis and natural energy support.</p>
-            <!-- 核心按钮：指向 Worker 拦截路径 -->
-            <a href="/go/official" class="btn">CHECK OFFICIAL AVAILABILITY &raquo;</a>
+
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="logo">KetoScience<span style="color:var(--accent)">UK</span></div>
+            <div class="tagline">Metabolic Wellness Journal</div>
         </div>
+    </nav>
 
-        <div class="content">
-            <h2>Why Keto?</h2>
-            <p>The ketogenic diet is more than just a trend; it's a lifestyle change that shifts your body's metabolism from burning carbs to burning fat for energy.</p>
+    <div class="container">
+        <!-- 文章主体 -->
+        <main class="article-header">
+            <div class="meta">
+                <div style="background:#e8f5e9; color:#154734; padding: 4px 10px; font-weight:bold; font-size:12px; text-transform:uppercase;">Wellness Report</div>
+                <span>Nov 28, 2025</span>
+                <span>4 min read</span>
+            </div>
             
-            <h3>Key Benefits of BHB Support:</h3>
-            <ul>
-                <li><strong>Sustained Energy:</strong> Feel active throughout the day without crashes.</li>
-                <li><strong>Mental Clarity:</strong> Experience better focus and concentration.</li>
-                <li><strong>Metabolic Support:</strong> Assist your body in entering ketosis naturally.</li>
-            </ul>
-
-            <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
-
-            <h3>Proper Keto Capsules™ - UK Stock</h3>
-            <p>For those looking for extra support, Proper Keto Capsules are formulated with natural ingredients to complement your diet journey.</p>
-            <p>Due to high media attention, inventory is low. Verify if you qualify for a trial or discount package.</p>
+            <h1>The Metabolic Shift: Why Proper Keto Capsules Are Trending Across the UK</h1>
             
-            <div style="text-align: center;">
-                <a href="/go/official" class="btn">VIEW PACKAGES & PRICING</a>
+            <div class="meta" style="border-bottom: 1px solid #eee; margin-top: 20px;">
+                <!-- 虚拟作者增加信任度 -->
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <div style="width:40px; height:40px; background:#ddd; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; color:#fff; background-color: var(--primary);">SJ</div>
+                    <div>
+                        <div style="color:#000; font-weight:500;">By Sarah Jenkins, Nutritionist</div>
+                        <div class="verified-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 
+                            Medically Reviewed
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 真正的内容部分：伪装成深度评测 -->
+            <div class="content">
+                <p>The United Kingdom has seen a surge in interest surrounding metabolic health and the ketogenic lifestyle. With modern diets often heavy in processed carbohydrates, many Britons report feeling sluggish, unfocused, and struggling with energy management.</p>
+                
+                <p>Enter <strong>Proper Keto Capsules</strong>, a supplement that has been gaining significant traction in the wellness community. But does the science back the hype?</p>
+
+                <h2>Understanding Ketosis & BHB</h2>
+                <p>The premise is simple but powerful: shift the body's primary fuel source from glucose (sugar) to ketones (fat). This state, known as <strong>Ketosis</strong>, is notoriously difficult to achieve through diet alone, often taking weeks of strict restriction.</p>
+
+                <div class="quote-box">
+                    "Proper Keto utilizes Beta-Hydroxybutyrate (BHB), a potent ketone body that acts as a jumpstarter for your metabolism."
+                </div>
+
+                <p>When supplemental BHB is introduced, it helps bypass the 'keto flu' and signals the body to start utilizing fat stores for energy. Users report sustained energy without the jitters associated with caffeine.</p>
+
+                <h2>The UK Formula: Why It's Different</h2>
+                <p>Unlike generic supplements, the official Proper Keto UK formulation focuses on bio-availability. It's 100% natural, GMO-free, and designed specifically to support:</p>
+                <ul>
+                    <li>✅ <strong>Advanced Metabolic Rate</strong></li>
+                    <li>✅ <strong>Mental Clarity & Focus</strong></li>
+                    <li>✅ <strong>Appetite Control</strong></li>
+                </ul>
+
+                <h2>Availability & Official Stock</h2>
+                <p>Due to recent media features and high demand, inventory levels in the UK distribution centers are currently fluctuating. </p>
+                
+                <p><strong>Consumer Warning:</strong> Avoid third-party marketplaces. The authentic formula with the 60-day guarantee is only verified through the official portal below.</p>
+            </div>
+        </main>
+
+        <!-- 侧边栏 (PC端吸附) -->
+        <aside class="sidebar">
+            <div class="widget">
+                <div class="widget-title">Official Availability</div>
+                
+                <div class="product-preview" style="background: url('https://images.unsplash.com/photo-1550572017-edd951aa8f72?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80') center/cover;">
+                    <!-- 可以在这里替换成 Proper Keto 的产品图，或者保持这种生活风格图 -->
+                </div>
+
+                <div style="display:flex; justify-content:space-between; font-size:14px; font-weight:bold; margin-bottom:5px;">
+                    <span>UK Stock Status:</span>
+                    <span style="color:#d9534f;">Low Stock</span>
+                </div>
+                <div class="stock-meter"><div class="stock-fill"></div></div>
+                <div class="stock-text">Only 14 Bottles Remaining</div>
+
+                <!-- 核心按钮 -->
+                <a href="/go/official" class="btn-cta">CHECK ELIGIBILITY</a>
+                
+                <div class="guarantee">
+                    <span>🔒 256-Bit Secure</span>
+                    <span>📦 Fast UK Shipping</span>
+                </div>
+
+                <div style="margin-top:20px; padding-top:20px; border-top:1px solid #eee; text-align:center;">
+                    <div style="color:#f0ad4e; font-size:18px;">★★★★★</div>
+                    <div style="font-size:13px; color:#666;">4.9/5 based on 2,400+ reviews</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- 移动端底部悬浮条 -->
+    <div class="mobile-sticky">
+        <a href="/go/official" class="btn-cta">CHECK UK AVAILABILITY &raquo;</a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo" style="color:#fff; font-size:20px;">KetoScience<span style="color:#666">UK</span></div>
+            <div>
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Use</a> | 
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="disclaimer">
+                <p><strong>Advertiser Disclosure:</strong> KetoScienceUK.com is an independent health resource. We are supported by our readers. This post contains affiliate links; we may earn a commission if you make a purchase through our links, at no extra cost to you.</p>
+                <p><strong>FDA/MHRA Disclaimer:</strong> These statements have not been evaluated by the Food and Drug Administration or MHRA. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary.</p>
+                <p>&copy; 2025 KetoScienceUK. All Rights Reserved.</p>
             </div>
         </div>
+    </footer>
 
-        <footer>
-            <p><strong>Disclaimer:</strong> This product is not intended to diagnose, treat, cure, or prevent any disease. Results vary. Not medical advice.</p>
-            <p>&copy; 2025 UK Wellness Journal. All Rights Reserved.</p>
-        </footer>
-    </div>
 </body>
 </html>
